@@ -15,7 +15,7 @@ namespace AngularCore
 
     [HttpGet]
     public IEnumerable<String> Get(){
-      return new string[] { "Do", "you", "even", "code", "bro"};
+      return new string[] { "Do", "you", "even", "code", "bro", "because", "I", "know", "you", "don't"};
     }
 
 

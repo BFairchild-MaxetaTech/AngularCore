@@ -15,10 +15,15 @@ import {
     FooterComponent
 } from './shared'
 
+import {
+    ListComponent
+} from './list'
+
 @NgModule({
     declarations: [
         HeaderComponent,
         FooterComponent,
+        ListComponent,
         AppComponent
   ],
     imports: [
