@@ -1,15 +1,23 @@
 <!-- basic application layout. We will use a "row" layout. The app takes up one entire row.-->
-<app-header></app-header>
 
-<div class="container"
-     fxLayout
-     fxLayout.xs="column"
-     fxLayoutAlign="center"
-     fxLayoutGap="10px"
-     fxLayoutGap.xs="0">
-  <div class="item item-1" fxFlex="15%">Item 1</div>
-  <div class="item item-2" fxFlex="20%" fxFlexOrder="3">Item 2</div>
-  <div class="item item-3" fxFlex>Item 3</div>
+<div fxLayout="column" fxFill>
+
+  <app-header titleText="{{appTitle}}"></app-header>
+
+  <div fxFlex="90" fxLayout="row" fxLayout.xs="column" fxLayout.sm ="column">
+    <div class="item item-1" fxFlex style="background-color:pink">Item 1</div>
+    <div class="item item-2" fxFlex style="background-color:orange">Item 2</div>
+    <div class="item item-3" fxFlex style="background-color:green">Item 3</div>
+  </div>
+
+  <app-footer></app-footer>
+
+
+
+
 </div>
 
-<app-footer></app-footer>
+
+
+
+

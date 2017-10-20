@@ -8,7 +8,7 @@ import { HttpModule } from '@angular/http';
 // for flex layouts
 import { FlexLayoutModule } from "@angular/flex-layout";
 // material modules needed.
-import { MatToolbarModule } from '@angular/material'
+import { MatToolbarModule, MatCardModule } from '@angular/material'
 
 import {
     HeaderComponent,
@@ -23,6 +23,7 @@ import {
   ],
     imports: [
       FlexLayoutModule,
+      MatCardModule,
       MatToolbarModule,
       BrowserModule,
       FormsModule,

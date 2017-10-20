@@ -1,27 +1,32 @@
 # AngularCore
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+This is a base boilerplate template code for a basic Angular application using .NET core for the API calls. Entity framework shell will be put into place at a later date. 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### How to Use
+1. Download / Clone repository
+2. Open command line to project directory.
+3. run the command `dotnet watch run`
+4. run the command `ng serve --proxy-config proxy.config.json`
 
-## Code scaffolding
+The application should launch at the default ports for each. Live refresh is enabled so everytime you make a change to an angular file and save it, it should be reflected in your browser.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Dependencies
+| Package        | Version
+| ------------- |-------------
+| @angular/animations      | ^4.2.4
+| @angular/common      | ^4.2.4
+| @angular/compiler      | ^4.2.4
+| @angular/core      | ^4.2.4
+| @angular/forms      | ^4.2.4
+| @angular/http      | ^4.2.4
+| @angular/platform-browser      | ^4.2.4
+| @angular/platform-browser-dynamic      | ^4.2.4
+| @angular/router      | ^4.2.4
+| @angular/flex-layout" | ^2.0.0-beta.9
+| @angular/material": | ^2.0.0-beta.12,
+| core-js      | ^2.4.1
+| rxjs      | ^5.4.2
+| zone.js      | ^0.8.14
