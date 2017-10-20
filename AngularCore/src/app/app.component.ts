@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Http } from '@angular/http';
 
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+// import the header bar component for use
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,14 +15,21 @@ import { Http } from '@angular/http';
 })
 
 export class AppComponent implements OnInit{
+    appTitle = "Demo Angular with .Net Core"
 
-  constructor(private _httpService: Http) { }
 
-  apiValues: string[] = [];
+    ngOnInit() {
 
-  ngOnInit() {
-      this._httpService.get('/api/Test').subscribe(values => {
-          this.apiValues = values.json() as string[];
-      });
-  }
+    }
+
+
+  //constructor(private _httpService: Http) { }
+
+  //apiValues: string[] = [];
+
+  //ngOnInit() {
+  //    this._httpService.get('/api/Test').subscribe(values => {
+  //        this.apiValues = values.json() as string[];
+  //    });
+  //}
 }

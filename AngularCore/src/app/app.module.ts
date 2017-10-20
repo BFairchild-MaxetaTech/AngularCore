@@ -5,11 +5,25 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+// for flex layouts
+import { FlexLayoutModule } from "@angular/flex-layout";
+// material modules needed.
+import { MatToolbarModule } from '@angular/material'
+
+import {
+    HeaderComponent,
+    FooterComponent
+} from './shared'
+
 @NgModule({
-  declarations: [
-    AppComponent
+    declarations: [
+        HeaderComponent,
+        FooterComponent,
+        AppComponent
   ],
-  imports: [
+    imports: [
+      FlexLayoutModule,
+      MatToolbarModule,
       BrowserModule,
       FormsModule,
       HttpModule
@@ -17,4 +31,6 @@ import { HttpModule } from '@angular/http';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
